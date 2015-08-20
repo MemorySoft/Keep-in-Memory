@@ -1,46 +1,44 @@
-My Personal Kanban (MPK)
-==========================
+Keep in Memory
+==============
 
-This is a small and simple in-browser application that aspire to be offline Personal Kanban board.
+Este es un fork de [My Personal Kanban](https://github.com/greggigon/my-personal-kanban), una pequeña aplicación para gestión de proyectos según el modelo kanban escrita por Greg Gigon. Está escrita en javascript y tiene funcionalidades muy básicas.
 
-It is a single page JavaScript application with very basic functionality. 
+## Functionalidades
 
-## Download
+Kim es un gestor de proyectos que sigue el método kanban y es el equivalente digital de una pizarra kanban. Se ejecuta en el navegador sin necesidad de bases de datos, pues estos se guardan en el navegador mediante el almacenamiento local.
 
-You can get latest release zip [at this link](https://github.com/greggigon/my-personal-kanban/blob/master/my-personal-kanban-0.8.0.zip?raw=true). Lastest version is 0.8.0 and includes new features.
+Con KiM podrás hacer lo siguiente:
+- Crear y borrar proyectos
+- Crear y gestionar columnas
+- Crear y gestionar tarjetas
+- Asignar colores según la prioridad a cada tarjeta
+- Mover las tarjetas entre columnas
+- Archivar las tarjetas
+- Exportar e importar los proyectos
 
-## How to use it?
+## Descarga
 
-Download the applicaton distribution zip file, unzip it at your prefered location, open __index.html__ page in your browser and your done.
 
-There is no need to be connected to Internet to use it. You can run it in any modern browser. The application will store your data in Web Browser's local storage, so you will not loose it.
 
-### Functionality
+## Instalación
 
-The functionality is very simple and basic. For a short screencast demo you can navigate to [Github pages](http://greggigon.github.io/my-personal-kanban/) .
+Descarga el paquete, descomprímelo y abre el `index.html` en cualquier navegador. También puedes colocar la carpeta descomprimida en la raiz de tu servidor local o subirla a un servidor remoto.
 
-Kanban boards with 2 to 10 columns, name columns and delete kanban.
+## Temas
 
-You can add cards to columns and drag them between columns as well as remove them.
+Los temas son sencillamente archivos __CSS__ acompañados de una imagen, que sobreescriben los estilos básicos. __KiM__ viene con un único tema pero se pueden instalar más de forma muy sencilla y podremos seleccionarlos desde el menú de la aplicación.
 
-## Adding Themes
+### Crear un tema
+La forma más sencilla de crear un tema nuevo es copiar y renombrar el archivo `default.css` de la carpeta __styles/themes__ y aplicar los cambios directamente en la hoja de estilos. 
 
-Themes are just a simple CSS files. They should be put in the __styles/themes__ folder. New Theme should be added to __scripts/themes.js__ file. Also, a Theme image (jpg) can be placed in __img/themes__ folder. Name of the image should be the same as the __css__ attribute in the themes.js file.
+Una vez hecho esto, debemos acompañar el tema de un pantallazo que colocaremos en la carpeta __img/themes__. Despues registraremos el nuevo tema añadiendo una nueva linea en el archivo __scripts/themes.js__ file. 
 
-## A bit of history
+> El nombre del archivo de imagen debe ser el mismo que el del valor del atributo `css` en __themes.js__
 
-I started this little project 2 years ago when I decided to familiarise myself with HTML5, Pure JavaScript and CSS.
+## TODO
 
-I used jQuery with QUnit for JavaScript TDD testing.
-
-I managed to get it to a workable state and stop developing it.
-
-After first public release not too long ago, I decided to rewrite it in __Angular__.
-
-This application is the result of me doing so, while attempting to learn Angular at the same time :)
-
-### Want to help?
-
-If you want to help me with styling or anything else, please do get in touch.
-
-Any issues, raise it on github.
+En un futuro me propongo conseguir lo siguiente:
+- Eliminar Bootstrap
+- Añadir un tema Material Design
+- Adaptarla para dispositivos móviles
+- Adaptar para escritorio, usando appjs o similar
