@@ -45,7 +45,8 @@ window.themes = [
 ## TODO
 
 En un futuro me propongo conseguir lo siguiente:
-- Eliminar Bootstrap
-- Añadir un tema Material Design
+- Añadir más temas
+- Sustituir Bootstrap por Materialize
 - Adaptarla para dispositivos móviles
-- Adaptar para escritorio, usando appjs o similar
+- Empaquetarla para escritorio, usando appjs o similar
+- Crear app para Android?
