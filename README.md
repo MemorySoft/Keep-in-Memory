@@ -33,6 +33,13 @@ La forma más sencilla de crear un tema nuevo es copiar y renombrar el archivo `
 
 Una vez hecho esto, debemos acompañar el tema de un pantallazo que colocaremos en la carpeta __img/themes__. Despues registraremos el nuevo tema añadiendo una nueva linea en el archivo __scripts/themes.js__ file. 
 
+``
+window.themes = [
+	{"name": "Default", "css":"default"},
+	{"name": "Tu Nuevo Tema", "css":"tu-nuevo-tema"}
+];
+``
+
 > El nombre del archivo de imagen debe ser el mismo que el del valor del atributo `css` en __themes.js__
 
 ## TODO
