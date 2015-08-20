@@ -5,7 +5,7 @@ Este es un fork de [My Personal Kanban](https://github.com/greggigon/my-personal
 
 ## Functionalidades
 
-Kim es un gestor de proyectos que sigue el método kanban y es el equivalente digital de una pizarra kanban. Se ejecuta en el navegador sin necesidad de bases de datos, pues estos se guardan en el navegador mediante el almacenamiento local.
+__KiM__ es un gestor de proyectos que sigue el método kanban y es el equivalente digital de una pizarra kanban. Se ejecuta en el navegador sin necesidad de bases de datos, pues estos se guardan en el navegador mediante el almacenamiento local.
 
 Con KiM podrás hacer lo siguiente:
 - Crear y borrar proyectos
