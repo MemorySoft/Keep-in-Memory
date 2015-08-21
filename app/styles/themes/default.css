@@ -1,0 +1,286 @@
+/*
+*   Keep in Memory | Default theme
+*   ------------------------------
+*   Autor: Hector Asencio @hectorasencio
+*   Versión: 0.1
+*   
+*/
+
+body {
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+a { 
+    padding-left: 2px; 
+    padding-right: 2px;
+}
+
+/* BOOTSRAP RESET 
+*********************************************/
+
+/* Grid */
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row { 
+    margin-left: 0px;
+}
+
+/* Formulario */
+.form-control {
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+label {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Botones */
+.btn-danger, 
+.btn-default, 
+.btn-info, 
+.btn-primary, 
+.btn-success, 
+.btn-warning {
+    text-shadow: none;
+    box-shadow: none;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-user-select: none;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+.btn-primary {
+    color: #FFF;
+    background: #333;
+    border: #333;
+}
+.btn-primary:focus, 
+.btn-primary:hover {
+    background: #fff;
+    color: #333;
+}
+.btn-primary:focus i, 
+.btn-primary:hover i {
+    color: #333;
+}
+
+.btn-primary.disabled, 
+.btn-primary.disabled.active, 
+.btn-primary.disabled.focus, 
+.btn-primary.disabled:active, 
+.btn-primary.disabled:focus, 
+.btn-primary.disabled:hover, 
+.btn-primary[disabled], 
+.btn-primary.active[disabled], 
+.btn-primary.focus[disabled], 
+.btn-primary[disabled]:active, 
+.btn-primary[disabled]:focus, 
+.btn-primary[disabled]:hover, 
+fieldset[disabled] .btn-primary, 
+fieldset[disabled] .btn-primary.active, 
+fieldset[disabled] .btn-primary.focus, 
+fieldset[disabled] .btn-primary:active, 
+fieldset[disabled] .btn-primary:focus, 
+fieldset[disabled] .btn-primary:hover {
+    background-color: #ddd;
+    background-image: none;
+    color: #999;
+}
+
+/* Modales */
+.modal-content {
+    position: relative;
+    background-color: #FFF;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    outline: 0px none;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+}
+.modal-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+/* Alertas */
+.alert {
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 0;
+}
+
+/* APP 
+*********************************************/
+
+#kanbanName a { 
+    color: #fff;
+    font-weight: 300;
+}
+
+/* Header */
+.navbar { 
+    background: #333;
+}
+.nav a { 
+    color: #fff; 
+    font-weight: 300;
+    border-right: 1px solid #666;
+}
+.nav a i {
+    margin-right: 10px;
+}
+.nav a.navbar-brand {
+    font-weight: 700;
+    
+}
+.nav > li > a:hover, 
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+}
+div.navbar-header a { 
+    color: #fff;
+}
+div.navbar-header form div.input-group {
+    margin: 10px;
+}
+div.navbar-header .input-group-addon {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 0;
+    background: #5CB85C;
+}
+
+/* Columnas */
+#columns { 
+    margin: 50px 0 0 0; 
+    overflow: hidden; 
+    height: 100%;
+}
+#columns > div { 
+    padding-left: 0; 
+    padding-right:0;
+}
+.columnHeader { 
+    margin: 0 0 5px 0;
+    padding: 0 0 10px 0;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #777;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #ddd;
+}
+.columnHeader a i {
+    font-size: 12px;
+    color: #777;
+}
+.columnHeader a.btn {
+    background: #ccc;
+    margin-right: 1px;
+}
+.columnHeader a.btn:hover {
+    background: #333;
+    color: #fff;
+}
+.columnHeader a.btn i {
+    color: #fff;
+}
+.columnHeader a.btn:hover i,
+.columnHeader a.btn:focus i {
+    color: #fff;
+}
+.column {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #f9f9f9;
+    height: 100%;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+/* Tarjetas */
+.cards { 
+    margin: 0px;
+    overflow: auto;
+}
+.card {
+    padding: 10px;
+    font-weight: 300;
+    list-style: none;
+    margin: 5px 0;
+    cursor: default;
+    color: #fff;
+    max-height: 150px;
+}
+.card:hover {
+    opacity: .5;
+}
+.card a { 
+    color: #fff; 
+    font-weight: 400;
+    font-size: 16px;
+}
+.card-details {
+    max-height: 100px;
+    overflow: hidden;
+}
+.card-title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.colorBox {  
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 2px;
+}
+.colorSelector .selected {
+border: 2px solid black;
+}
+
+/* Tags */
+.default { 
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.0980392) 0px 1px 10px 0px;
+    box-shadow: inset rgba(0, 0, 0, 0.0980392) 0px 1px 10px 0px;
+}
+.default-color { 
+    background-color: #ffffff; 
+}
+
+/* Estados */
+.error { 
+    border-color: red;
+}
+
+/* Helpers */
+.noDisplay { 
+    display: none; 
+}
+.noMargin { 
+    margin-bottom: 0px;
+}
+
