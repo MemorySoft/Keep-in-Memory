@@ -1,7 +1,7 @@
 Keep in Memory
 ==============
 
-Este es un fork de [My Personal Kanban](https://github.com/greggigon/my-personal-kanban), una pequeña aplicación para gestión de proyectos según el modelo kanban escrita por Greg Gigon. Está escrita en javascript y tiene funcionalidades muy básicas.
+Este es un fork de [My Personal Kanban](https://github.com/greggigon/my-personal-kanban), una pequeña aplicación para gestión de proyectos según el modelo kanban desarrollada por Greg Gigon. Está escrita en javascript y tiene funcionalidades muy básicas.
 
 ## Functionalidades
 
@@ -15,10 +15,6 @@ Con __KiM__ podrás hacer lo siguiente:
 - Mover las tarjetas entre columnas
 - Archivar las tarjetas
 - Exportar e importar los proyectos
-
-## Descarga
-
-
 
 ## Instalación
 
@@ -35,8 +31,9 @@ Una vez hecho esto, debemos acompañar el tema de un pantallazo que colocaremos 
 
 ```
 window.themes = [
-	{"name": "Default", "css":"default"},
-	{"name": "Tu Nuevo Tema", "css":"tu-nuevo-tema"}
+    {"name": "Default", "css":"default"},
+    {"name": "Default Claro", "css":"default-clear"},
+    {"name": "Tu Nuevo Tema", "css":"tu-nuevo-tema"}
 ];
 ```
 
