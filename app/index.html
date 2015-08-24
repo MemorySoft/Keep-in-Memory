@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900,100' rel='stylesheet' type='text/css'>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/main.2e1732e0.css">
     <link rel="stylesheet" href="styles/themes/default.css" id="themeStylesheet">
 
@@ -55,7 +56,7 @@
 
         <div id="quickSwitch" class="form-group pull-left">
           <form>
-            <select ng-model="switchTo" ng-options="name for name in switchToList" ng-change="switchToKanban(switchTo)">
+            <select class="js-example-basic-single" ng-model="switchTo" ng-options="name for name in switchToList" ng-change="switchToKanban(switchTo)">
               <option>Cambiar a ...</option>
             </select>
           </form>
@@ -593,9 +594,16 @@
 <script src="bower_components/spinjs/spin.js"></script>
 <script src="bower_components/FileSaver/FileSaver.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 
 <script src="scripts/themes.82ae94b8.js"></script>
 <script src="scripts/scripts.9bb3f574.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $(".js-example-basic-single").select2();
+  });
+</script>
 
 </body>
 </html>
