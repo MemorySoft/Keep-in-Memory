@@ -22,8 +22,8 @@
 <body ng-app="mpk">
 
 <!--[if lt IE 9]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+  <p class="browsehappy">Para poder visualizar esta página web debes <a href="http://browsehappy.com/">instalar un navegador</a></p>
+<![endif]-->
 
 <div ng-view>
 </div>
@@ -35,7 +35,7 @@
     <!-- CABECERA ------------------------------------------------------------------------ -->
 
     <div class="navbar-inner">
-      <div class="navbar-header col-md-4">
+      <div class="navbar-header col-md-5">
         <span id="kanbanName" class="navbar-brand pull-left" ng-model="kanban" ng-hide="editingName">
           <a class="renameKanban" ng-click="editingKanbanName()"> 
             <strong>{{kanban.name}}</strong>
@@ -56,56 +56,57 @@
 
         <div id="quickSwitch" class="form-group pull-left">
           <form>
-            <select class="js-example-basic-single" ng-model="switchTo" ng-options="name for name in switchToList" ng-change="switchToKanban(switchTo)">
+            <select class="js-example-basic-single col-md-12" ng-model="switchTo" ng-options="name for name in switchToList" ng-change="switchToKanban(switchTo)">
               <option>Cambiar a ...</option>
             </select>
           </form>
         </div>
       </div>
 
-      <div class="col-md-8">
-        <ul class="nav navbar-nav pull-right" id="menu">
-          <!--
-          <li>
-            <a class="navbar-brand" href="#!">KEEP IN MEMORY</a>
-          </li>
-          -->
-          <li>
-            <a class="mpkNew" title="New Kanban board" ng-click="kanbanMenu.openNewKanban()">
-              NUEVO
-            </a>
-          </li>
-          <li>
-            <a title="Downloadelete Kanban from local storage" ng-click="kanbanMenu.delete()">
-              ELIMINAR
-            </a>
-          </li>
-          <li>
-            <a title="Select Theme for the Kanban board" ng-click="kanbanMenu.openSwitchTheme()">
-              TEMAS
-            </a>
-          </li>
-          <li>
-            <a title="Open archive" ng-click="kanbanMenu.openArchive(kanban)">
-              HISTORIAL
-            </a>
-          </li>
-          <li>
-            <a title="Export Kanban to file" ng-click="kanbanMenu.openExport(allKanbans, kanban.name)" href="">
-              EXPORTAR
-            </a>
-          </li>
-          <li>
-            <a title="Import Kanban from file" ng-click="kanbanMenu.openImport()" href="">
-              IMPORTAR
-            </a>
-          </li>
-          <li>
-            <a title="Help" ng-click="showHelp=true" href="">
-              AYUDA
-            </a>
-          </li>
-        </ul>
+      <div class="col-md-7">
+        <div class="nav dropdown">
+          <a class="pull-right" id="navigation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="glyphicon glyphicon-option-horizontal"></i>
+          </a>
+          <ul class="dropdown-menu pull-right" id="menu">
+            <li>
+              <a class="mpkNew" title="New Kanban board" ng-click="kanbanMenu.openNewKanban()">
+                NUEVO
+              </a>
+            </li>
+            <li>
+              <a title="Downloadelete Kanban from local storage" ng-click="kanbanMenu.delete()">
+                ELIMINAR
+              </a>
+            </li>
+            <li>
+              <a title="Select Theme for the Kanban board" ng-click="kanbanMenu.openSwitchTheme()">
+                TEMAS
+              </a>
+            </li>
+            <li>
+              <a title="Open archive" ng-click="kanbanMenu.openArchive(kanban)">
+                HISTORIAL
+              </a>
+            </li>
+            <li>
+              <a title="Export Kanban to file" ng-click="kanbanMenu.openExport(allKanbans, kanban.name)" href="">
+                EXPORTAR
+              </a>
+            </li>
+            <li>
+              <a title="Import Kanban from file" ng-click="kanbanMenu.openImport()" href="">
+                IMPORTAR
+              </a>
+            </li>
+            <li>
+              <a title="Help" ng-click="showHelp=true" href="">
+                AYUDA
+              </a>
+            </li>
+          </ul>
+        </div>
+        
 
         <!--
         <ul class="nav navbar-nav" id="cloudMenu">

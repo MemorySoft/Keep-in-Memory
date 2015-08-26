@@ -128,9 +128,18 @@ fieldset[disabled] .btn-primary:hover {
     border-radius: 0;
 }
 
+/* Dropdowns */
+.dropdown-menu > li > a {
+    padding: 10px 20px;
+    font-weight: 300;
+}
+
 /* APP 
 *********************************************/
 
+#kanbanName {
+    padding-left: 0;
+}
 #kanbanName a { 
     color: #333;
     font-weight: 700;
@@ -139,6 +148,10 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 /* Header */
+#navigation {
+    font-size: 22px;
+    margin-top: 15px;
+}
 .navbar { 
     background: #fff;
     height: 50px;
@@ -146,9 +159,6 @@ fieldset[disabled] .btn-primary:hover {
 .nav a { 
     color: #666; 
     font-weight: 300;
-}
-.nav a i {
-    margin-right: 10px;
 }
 .nav a.navbar-brand {
     font-weight: 700;

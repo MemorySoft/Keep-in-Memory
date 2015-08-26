@@ -128,25 +128,34 @@ fieldset[disabled] .btn-primary:hover {
     border-radius: 0;
 }
 
-/* APP 
-*********************************************/
-
-#kanbanName a { 
-    color: #fff;
+/* Dropdowns */
+.dropdown-menu > li > a {
+    padding: 10px 20px;
     font-weight: 300;
 }
 
+/* APP 
+*********************************************/
+
+#kanbanName {
+    padding-left: 0;
+}
+#kanbanName a { 
+    color: #fff;
+    font-weight: 700;
+}
+
 /* Header */
+#navigation {
+    font-size: 22px;
+    margin-top: 15px;
+}
 .navbar { 
     background: #333;
 }
 .nav a { 
     color: #fff; 
     font-weight: 300;
-    border-right: 1px solid #666;
-}
-.nav a i {
-    margin-right: 10px;
 }
 .nav a.navbar-brand {
     font-weight: 700;
@@ -173,7 +182,7 @@ div.navbar-header .input-group-addon {
 
 /* Columnas */
 #columns { 
-    margin: 50px 0 0 0; 
+    margin: 55px 0 0 0; 
     overflow: hidden; 
     height: 100%;
 }

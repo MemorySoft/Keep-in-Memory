@@ -3,7 +3,7 @@ Keep in Memory
 
 Este es un fork de [My Personal Kanban](https://github.com/greggigon/my-personal-kanban), una pequeña aplicación para gestión de proyectos según el modelo kanban desarrollada por Greg Gigon. Está escrita en javascript y tiene funcionalidades muy básicas.
 
-## Functionalidades
+## Funcionalidades
 
 __KiM__ es un gestor de proyectos que sigue el método kanban y es el equivalente digital de una pizarra kanban. Se ejecuta en el navegador sin necesidad de bases de datos, pues estos se guardan en el navegador mediante el almacenamiento local.
 
